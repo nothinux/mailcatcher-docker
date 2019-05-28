@@ -1,4 +1,5 @@
 FROM alpine:latest
+LABEL maintainer="Taufik Mulyana <taufik@nothinux.id>"
 
 RUN apk add --update ruby ruby-dev ruby-bigdecimal sqlite sqlite-dev build-base libstdc++ ca-certificates && \
     gem install json --no-ri --no-rdoc && \
